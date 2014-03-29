@@ -1,14 +1,13 @@
-/********** BASICS **********/
+/******************* BASICS *******************/
 body {
   background-color: #e2e2e2;
   font-family: 'Open Sans', sans-serif;
   color: #333;
 }
 
-html{ 
+html {
   font-size: 70%;
 }
-
 
 a {
   cursor: pointer;
@@ -17,51 +16,54 @@ a {
 
 #container {
   width: 960px;
+  min-height: 350px;
   margin: 15px auto;
   overflow: hidden;
-  background: #f0f0f0;
+  background: #fff;
   box-shadow: 0px 0px 15px #565656;
   border-radius: 20px;
 }
 
-
-/********** HEADER **********/
-
-#header {
-  float: left;
-  width: 940px;
-  margin: 10px;
-}
-
-#header h1 {
+.logo {
   float: left;
   width: 460px;
   margin-top: 10px;
-  margin-right: 10px;
   font-family: 'Ribeye', Georgia, serif;
+  line-height: 0.8;
+}
+
+.logo:first-letter {
+  float: left;
+  margin-bottom: 0;
+}
+
+/******************* HEADER *******************/
+#header {
+  float: left;
+  margin: 10px;
+}
+
+#header .logo {
   font-size: 32px;
   line-height: 0.8;
 }
 
-#header h1 a {
-  color: #004e94;
-  text-shadow: 0px 2px 2px #005;
+#header .logo a {
+  color: #004394;
 }
 
-#header h1 a:hover {
+#header .logo a:hover {
   color: #99c;
 }
 
-#header h1:first-line {
-  font-size: 2em;
+#header .logo:first-line {
+  font-size: 64px;
   letter-spacing: -6px;
 }
 
-#header h1:first-letter {
-  float: left;
-  font-size: 1.5em;
-  letter-spacing: -10px;
-  margin-bottom: 0;
+#header .logo:first-letter {
+  font-size: 96px;
+  letter-spacing: -8px;
 }
 
 #header hr {
@@ -75,7 +77,7 @@ a {
   border-radius: 0 0 20px 20px;
 }
 
-/********** CONTACTS **********/
+/******************* CONTACTS *******************/
 #contacts {
   float: right;
   font-size: 1.2rem;
@@ -96,8 +98,7 @@ a {
   width: 36px;
 }
 
-/********** MAIN NAV **********/
-
+/******************* MAIN NAV *******************/
 #mainNav {
   float: right;
   position: relative;
@@ -125,12 +126,12 @@ a {
 }
 
 #mainNav a:hover {
-  background-color: #004e94;
+  background-color: #004394;
   color: #efefef;
 }
 
 #mainNav .current {
-  background-color: #004e94;
+  background-color: #004394;
   color: #efefef;
 }
 
@@ -152,4 +153,38 @@ a {
 #mainNav ul li {
   margin: 0;
   padding: 0;
+}
+
+/******************* FOOTER *******************/
+#footer {
+  width: 960px;
+  height: 150px;
+  margin: 15px auto;
+  overflow: hidden;
+  background: #004394;
+  box-shadow: 0px 0px 15px #565656;
+  border-radius: 20px;
+}
+
+#footer .logo {
+  margin: 10px;
+  font-size: 20px;
+}
+
+#footer .logo a {
+  color: #efefef;
+}
+
+#footer .logo a:hover {
+  color: #99c;
+}
+
+#footer .logo:first-line {
+  font-size: 40px;
+  letter-spacing: -4px;
+}
+
+#footer .logo:first-letter {
+  font-size: 60px;
+  letter-spacing: -6px;
 }
