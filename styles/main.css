@@ -13,6 +13,19 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+a:hover { color: #99c; }
+
+h2 {
+  margin-left: 20px;
+  //padding: 7px;
+  //color: white;
+  font-size: 2.4em;
+  font-family: 'Ribeye', cursive, serif;
+  //font-weight: 600;
+  line-height: 1.5;
+  //background-color: #004394;
+  border-radius: 5px;
+}
 
 .clear { clear: both; }
 .clearfix:after { clear: both; }
@@ -21,10 +34,23 @@ a {
   width: 960px;
   min-height: 350px;
   margin: 15px auto;
+  padding-bottom: 20px;
   overflow: hidden;
   background: #fff;
   border-radius: 20px;
 }
+
+#content {
+  float: left;
+  width: 620px;
+  padding: 0 10px;
+}
+
+#sidebar {
+  float: left;
+  width: 320px;
+}
+
 
 .logo {
   float: left;
@@ -103,13 +129,13 @@ a {
 /******************* MAIN NAV *******************/
 #mainNav {
   float: right;
-  position: relative;
+  margin-top: 25px;
+  list-style: none;
   z-index: 2;
 }
 
-#mainNav li {
+#mainNav > li {
   display: inline-block;
-  margin: 20px 0;
   width: 88px;
 }
 
@@ -117,11 +143,11 @@ a {
   display: block;
   margin: 0;
   padding-top: 4px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 35px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 30px;
   letter-spacing: -1px;
-  color: #ccf;
+  color: #ddf;
   text-align: center;
   background-color: #99c;
   border-radius: 10px 10px 0 0;
@@ -129,12 +155,12 @@ a {
 
 #mainNav a:hover {
   background-color: #004394;
-  color: #efefef;
+  color: #eef;
 }
 
 #mainNav .current {
   background-color: #004394;
-  color: #efefef;
+  color: #fff;
 }
 
 #mainNav ul a {
@@ -143,24 +169,27 @@ a {
 
 #mainNav ul {
   display: none;
-  position: relative;
   padding-top: 5px;
+  z-index: 3;
 }
 
-#mainNav li:hover > ul {
-  display: table;
+#mainNav li:hover  ul {
+  display: block;
+  position: absolute;
+}
+#mainNav li:hover li {
+  float: none;
 }
 
 #mainNav ul li {
-  margin: 0;
-  padding: 0;
+  width: 88px;
 }
 
 /******************* Breadcrumbs *******************/
 #breadcrumbs {
   float: left;
   margin-left: 10px;
-  margin-top: 16px;
+  margin-top: 20px;
   font-size: 1em;
 }
 
@@ -175,7 +204,6 @@ a {
 
 .thiscrumb {
   font-size: 1.1em;
-  font-style: italic;
   font-weight: 600;
 }
 
@@ -187,6 +215,110 @@ a {
   font-size: 1.2em;
   color: #004394;
 }
+
+/******************* ANIMAL SEARCH ******************/
+.pet {
+  float: left;
+  margin: 10px 10px 20px 10px;
+  padding: 5px;
+  color: #004e94;
+  border: 1px dashed #99c;
+  border-radius: 5px;
+}
+
+.pet:hover {
+  background: #004e94;
+  color: white;
+}
+
+.pet img {
+  width: 122px;
+  height: 122px;
+  border-radius: 5px;
+}
+
+.pet .name {
+  font-size: 1.4em;
+  //font-weight: 600;
+  letter-spacing: -1px;
+  padding: 10px 0;
+}
+
+/******************* SIDEBAR ******************/
+.catButton, .dogButton {
+  height: 150px;
+  margin: 10px 10px 10px 20px;
+  background-size: 350px auto;
+  border-radius: 3px;
+}
+
+.catButton {
+  background-image: url('../img/catbutton.jpg');
+}
+
+.catButton a, .dogButton a {
+  float: left;
+  width: 200px;
+  margin-top: 110px;
+  margin-left: -10px;
+  padding: 5px 10px;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: white;
+  background-color: rgba( 0, 78, 148, 0.7);
+  border-radius: 3px;
+}
+
+.catButton a:after, .dogButton a:after {
+  content: "> > >";
+  font-family: 'Ribeye Marrow', cursive;
+  font-size: 1.2em;
+  float: right;
+}
+
+.catButton a:hover, .dogButton a:hover {
+  color: rgba( 0, 78, 148, 0.7);
+  background-color: #ccf;
+}
+
+.latestNews {
+  margin: 20px 10px 10px 20px;
+  border: 1px dashed #99c;
+  border-radius: 3px;
+}
+
+.latestNews > .heading {
+  width: 210px;
+  margin-top: -12px;
+  margin-left: -11px;
+  padding-left: 10px;
+  color: white;
+  line-height: 24px;
+  font-size: 1.3em;
+  background-color: rgba( 0, 78, 148, 0.8);
+  border-radius: 3px;
+}
+
+.newsBrief { padding: 10px; }
+.newsBrief a { font-weight: 600; }
+.newsBrief img { 
+  float: left; 
+  width: 80px; 
+  margin-right: 5px;
+}
+.newsBrief .heading { 
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/******************* Content Footer ***********************/
+
+#contentFoot p, #contentFoot a {
+  color: #222;
+  text-align: center;
+}
+
 
 /******************* FOOTER *******************/
 #footer {
