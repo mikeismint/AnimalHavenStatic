@@ -20,8 +20,8 @@ h2 {
   //padding: 7px;
   //color: white;
   font-size: 2.4em;
-  font-family: 'Ribeye', cursive, serif;
-  //font-weight: 600;
+  //font-family: 'Ribeye', cursive, serif;
+  font-weight: 600;
   line-height: 1.5;
   //background-color: #004394;
   border-radius: 5px;
@@ -239,10 +239,120 @@ h2 {
 
 .pet .name {
   font-size: 1.4em;
-  //font-weight: 600;
   letter-spacing: -1px;
   padding: 10px 0;
 }
+
+/******************** ANIMAL PROFILE *********************/
+.petdata{
+  float: left;
+  width: 462px;
+}
+
+.portrait {
+  float: left;
+  width: 220px;
+  height: 220px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+#petinfo {
+  float: left;
+  margin: 10px;
+  width: 200px;
+}
+
+#petinfo td {
+  width: 90px;
+  padding: 10px;
+  color: #555;
+  font-size: 1.2em;
+}
+
+#petinfo .label { 
+  font-weight: 600; 
+  text-align: right; 
+  color: #004e94;
+}
+
+#petinfo .odd { background-color: #dce8f4; }
+
+.gallery {
+  float: left;
+  width: 132px;
+  margin: -30px 10px 10px 10px;
+  border: 1px dashed #99c;
+  border-radius: 5px;
+}
+
+.gallery img {
+  width: 122px;
+  height: 122px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.gallery p {
+  padding: 5px;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-align: center;
+  color: #004e94;
+}
+
+#description, #adoptinfo {
+  margin: 0 10px;
+  border-radius:  3px;
+}
+
+.petdata .heading {
+  padding: 3px;
+  color: #004e94;
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: -1px;
+}
+
+.rehomeButtons a {
+  float: left;
+  width: 180px;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  color: #eee;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 16pt;
+  background-color: #99c;
+  border-radius: 3px;
+}
+
+.rehomeButtons a:hover { background-color: #004e94; }
+.rehomeButtons a:after { 
+  content: ">";
+  padding-right: 5px;
+  float: right;
+  font-size: 1.2em;
+  font-family: 'Ribeye', cursive;
+}
+
+#adoptinfo {
+  margin: 10px;
+  padding: 10px 20px;
+  color: #555;
+  line-height: 20px;
+  background-color: #dce8f4;
+}
+
+#adoptinfo li { font-size: 1.2em; }
+#adoptinfo li:before {
+  content: ">";
+  padding-right: 5px;
+  color: #004394;
+  font-weight: 600;
+  font-family: 'Ribeye', cursive;
+}
+
 
 /******************* SIDEBAR ******************/
 .catButton, .dogButton {
