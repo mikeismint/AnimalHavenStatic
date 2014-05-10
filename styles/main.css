@@ -1,7 +1,7 @@
 /******************* BASICS *******************/
 body {
   background-color: #e2e3e4;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Century Gothic", 'Open Sans', sans-serif;
   color: #333;
 }
 
@@ -16,14 +16,18 @@ a {
 a:hover { color: #99c; }
 
 h2 {
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 2.4em;
-  font-weight: 600;
-  //line-height: 1.5;
+  font-weight: 700;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .clear { clear: both; }
-.clearfix:after { clear: both; }
+//.clearfix:after { clear: both; }
 
 #container {
   width: 960px;
@@ -38,14 +42,15 @@ h2 {
 #content {
   float: left;
   width: 620px;
-  padding: 0 10px;
+  margin: 0 10px;
+  overflow: hidden;
 }
 
 #sidebar {
-  float: left;
+  float: right;
+  margin-top: 27px;
   width: 320px;
 }
-
 
 .logo {
   float: left;
@@ -58,6 +63,57 @@ h2 {
   float: left;
   margin-bottom: 0;
 }
+
+.infobox {
+  float: left;
+  width: 290px;
+  margin: 10px;
+  line-height: 20px;
+  background-color: #004e94;
+  border-radius: 3px;
+}
+
+.infobox .infoimg {
+  width: 270px;
+  height: 80px;
+  margin: 10px;
+  background-image: url('../img/imageWideMedRectangle.jpg');
+  border-radius: 3px 3px 0 0;
+}
+
+.infobox h3 {
+  float: left;
+  margin-top: 40px;
+  padding: 5px 0;
+  //margin: 45px 35px 0 35px;
+  width: 100%;
+  //line-height: 1.6em;
+  letter-spacing: -1px;
+  font-size: 1.5em;
+  color: #eee;
+  background-color: rgba( 0, 78, 148, 0.8);
+}
+
+.infobox ul { margin: 10px; }
+
+.infobox li {
+  padding-left: 10px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.infobox li:before {
+  content: ">";
+  padding-right: 5px;
+  color: #dce8f4;
+  font-family: 'Ribeye', cursive;
+  font-weight: 600;
+}
+
+
+
+
+
 
 /******************* HEADER *******************/
 #header {
@@ -113,7 +169,7 @@ h2 {
 
 #contacts li p {
   float: left;
-  line-height: 36px;
+  line-height: 32px;
 }
 
 #contacts img {
@@ -145,7 +201,7 @@ h2 {
   color: #ddf;
   text-align: center;
   background-color: #99c;
-  border-radius: 10px 10px 0 0;
+  border-radius: 7px 7px 0 0;
 }
 
 #mainNav a:hover {
@@ -242,6 +298,15 @@ h2 {
 .petdata{
   float: left;
   width: 462px;
+  font-size: 1.15em;
+}
+
+.petdata .heading {
+  padding: 3px;
+  color: #004e94;
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: -1px;
 }
 
 .portrait {
@@ -262,22 +327,28 @@ h2 {
   width: 90px;
   padding: 10px;
   color: #555;
-  font-size: 1.2em;
+//  font-size: 1.2em;
 }
 
-#petinfo .label { 
-  font-weight: 600; 
-  text-align: right; 
+#petinfo .label {
+  font-weight: 700;
+  text-align: right;
   color: #004e94;
 }
 
 #petinfo .odd { background-color: #dce8f4; }
 
+iframe {
+  display: block;
+  margin: 10px auto;
+}
+
 .gallery {
   float: left;
   width: 132px;
-  margin: -30px 10px 10px 10px;
+  margin: 10px;
   border: 1px dashed #99c;
+  border-top: 0;
   border-radius: 5px;
 }
 
@@ -289,24 +360,18 @@ h2 {
 }
 
 .gallery p {
-  padding: 5px;
+  margin-right: -5px;
+  margin-left: -5px;
+  padding: 5px 10px;
   font-size: 1.3em;
-  font-weight: 600;
-  text-align: center;
-  color: #004e94;
+  color: #eee;
+  background-color: #004e94;
+  border-radius: 3px;
 }
 
 #description, #adoptinfo {
   margin: 0 10px;
   border-radius:  3px;
-}
-
-.petdata .heading {
-  padding: 3px;
-  color: #004e94;
-  font-weight: 600;
-  font-size: 1.3em;
-  letter-spacing: -1px;
 }
 
 .rehomeButtons a {
@@ -316,14 +381,13 @@ h2 {
   padding: 5px 10px;
   color: #eee;
   font-weight: 600;
-  font-size: 1.2em;
   line-height: 16pt;
   background-color: #99c;
   border-radius: 3px;
 }
 
 .rehomeButtons a:hover { background-color: #004e94; }
-.rehomeButtons a:after { 
+.rehomeButtons a:after {
   content: ">";
   padding-right: 5px;
   float: right;
@@ -338,13 +402,12 @@ h2 {
   line-height: 20px;
   background-color: #dce8f4;
 }
-
-#adoptinfo li { font-size: 1.2em; }
+#adoptinfo .heading { font-weight: bold; }
 #adoptinfo li:before {
   content: ">";
   padding-right: 5px;
   color: #004394;
-  font-weight: 600;
+  font-weight: 700;
   font-family: 'Ribeye', cursive;
 }
 
@@ -352,12 +415,10 @@ h2 {
 #newsstory .postdate { font-style: italic; }
 #newsstory .tags {
   float: left;
-  margin: 5px 20px;
+  margin: 5px 10px;
   padding: 0 10px;
   line-height: 18px;
   color: #fff;
-  border: 1px solid #555;
-  border-radius: 3px;
   background-color: #004e94;
 }
 
@@ -395,7 +456,7 @@ h2 {
 /******************* SIDEBAR ******************/
 .catButton, .dogButton {
   height: 150px;
-  margin: 10px 10px 10px 20px;
+  margin: 10px;
   background-size: 350px auto;
   border-radius: 3px;
 }
@@ -406,16 +467,13 @@ h2 {
 
 .catButton a, .dogButton a {
   float: left;
-  width: 200px;
+  width: 280px;
   margin-top: 110px;
-  margin-left: -10px;
   padding: 5px 10px;
   font-size: 1.5em;
-  font-weight: 400;
   letter-spacing: -1px;
   color: white;
-  background-color: rgba( 0, 78, 148, 0.7);
-  border-radius: 3px;
+  background-color: rgba( 0, 78, 148, 0.8);
 }
 
 .catButton a:after, .dogButton a:after {
@@ -426,38 +484,148 @@ h2 {
 }
 
 .catButton a:hover, .dogButton a:hover {
-  color: rgba( 0, 78, 148, 0.7);
+  color: #004e94;
   background-color: #ccf;
 }
 
 .latestNews {
-  margin: 20px 10px 10px 20px;
+  margin: 10px 15px;
   border: 1px dashed #99c;
+  border-top: 0px;
   border-radius: 3px;
 }
 
 .latestNews > .heading {
-  width: 210px;
-  margin-top: -12px;
-  margin-left: -11px;
-  padding-left: 10px;
+  width: 280px;
+  margin-left: -5px;
+  padding: 5px 10px;
   color: white;
-  line-height: 24px;
-  font-size: 1.3em;
-  background-color: rgba( 0, 78, 148, 0.8);
+  //line-height: 24px;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  background-color: rgba( 0, 78, 148, 1.0);
   border-radius: 3px;
 }
 
 .newsBrief { padding: 10px; }
 .newsBrief a { font-weight: 600; }
-.newsBrief img { 
-  float: left; 
-  width: 80px; 
+.newsBrief img {
+  float: left;
+  width: 80px;
   margin-right: 5px;
 }
 .newsBrief .heading { 
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+/**************************** CONTACT FORMS ***********************************/
+form {
+  float: left;
+  width: 360px;
+  margin: 10px;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.formfield {
+  float: left;
+  width: 350px;
+  margin-bottom: 10px;
+  padding: 7px 5px;
+  color: #333;
+  border: 1px dashed #99c;
+  border-radius: 0 3px 3px 0;
+}
+
+.formfield label {
+  float: left;
+  width: 105px;
+  padding-right: 10px;
+  text-align: right;
+  line-height: 21px;
+  font-size: 1.2em;
+}
+
+.formfield input, .formfield textarea, .formfield select{
+  float: left;
+  margin: 0;
+  height: 18px
+  padding: 0 0 0 5px;
+  width: 227px;
+  font-family: inherit;
+  font-size: 1.2em;
+  color: #333;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.formfield input:hover, .formfield textarea:hover {
+  border: 1px solid #004e94;
+}
+
+.formfield textarea {
+  width: 345px;
+  height: 100px;
+  resize: none;
+}
+
+.formfield select {
+  font-size: 1.2em;
+  border: 1px solid #99c;
+  border-radius: 3px;
+}
+
+.button {
+  float: right;
+  width: 125px;
+  padding: 0;
+  line-height: 20px;
+}
+
+.button input {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.button input:hover { 
+  background-color: #004e94;
+  color: #eee;
+}
+
+#contactinfo {
+  float: left;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  color: #444;
+  background-color: #dce9f4;
+  border-radius: 3px;
+}
+
+#contactinfo h3 { 
+  color: #004e94;
+}
+
+#contactinfo p {
+  text-align: justify;
+  margin: 5px 0;
+}
+
+#contactinfo .contacttype {
+  font-style:italic;
+  padding-top:5px;
+}
+
+#contactinfo .contactdetail {
+  padding-bottom: 5px;
+  color: #004e94;
+  font-size: 1.1em;
+  border-bottom: 1px dashed #99c;
+  border-radius: 3px;
 }
 
 /******************* Content Footer ***********************/
@@ -502,24 +670,24 @@ h2 {
   letter-spacing: -6px;
 }
 
-#footer .virginLink {
-  position: relative;
-  left: 598px;
-  top: -68px
-}
-
 #footer #nav {
   float: right;
   font-size: 1.2rem;
   margin-top: 10px;
-  margin-right: 120px;
+  //margin-right: 120px;
 }
 
 #footer #nav a {
-  width: 88px;
+  width: 92px;
   height: 16px;
   display: block;
   text-align: center;
+}
+
+#footer .virginLink {
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 #footer .topitem {
@@ -555,6 +723,6 @@ h2 {
 #footer .charitydetails {
   float: right;
   margin-top: 56px;
-  margin-right: 122px;
+  margin-right: 10px;
   color: #99c;
 }

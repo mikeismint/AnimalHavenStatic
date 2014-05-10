@@ -18,7 +18,7 @@
 
 <div id="container">
   <div id="header">
-      <h1 class="logo"><a href="index.htm">
+      <h1 class="logo"><a href="./index.htm">
         OTTERSPOOL <br />
         Animal Haven
       </a></h1>
@@ -28,7 +28,7 @@
       <li>
         <a href="mailto:otterspool@ntlworld.com">
           <img src="./img/email.png" />
-          <p> otterspool@ntlworld.com</p>
+          otterspool@rld.com
         </a>
       </li>
       <li>
@@ -37,9 +37,9 @@
         </a>
       </li>
     </ul> <!-- contacts -->
-
+    
     <ul id="mainNav" class="clearfix">
-      <li><a href="#" class="current">Home</a></li>
+      <li><a href=./index.htm">Home</a></li>
       <li><a href="#">Adopt</a>
         <ul>
           <li><a href="./cats.htm">Cats</a></li>
@@ -54,85 +54,65 @@
         </ul>
       </li>
       <li><a href="./newsstory.html">News</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="./contact.htm" class="current">Contact</a></li>
     </ul> <!-- mainNav -->
-    <br />
     <hr />
     <ul id="breadcrumbs">
-      <li><a class="crumb" href="index.htm">Home</a></li>
-      <li><a class="crumb" href="#">Test</a></li>
-      <li><a class="thiscrumb" href="#">Test</a></li>
+      <li><a class="crumb" href=".index.htm">Home</a></li>
+      <li class="thiscrumb">Contact Us</li>
     </ul>
+    <div class="clear"></div>
   </div> <!-- header -->
-  <div class="clear"></div>
 
   <div id="content">
+    <h2>Contact Otterspool</h2>
 
-    <h2 class="lgeName">Bernard</h2>
-
-    <div class="petdata">
-
-      <img class="portrait" src="./img/cat.jpg"/>
-      <table id="petinfo">
-        <tbody>
-          <tr class="odd">
-            <td class="label">Name</td>
-            <td class="data">Bernard</td>
-          </tr>
-          <tr>
-            <td class="label">Age</td>
-            <td class="data">3</td>
-          </tr>
-          <tr class="odd">
-            <td class="label">Breed</td>
-            <td class="data">Lion</td>
-          </tr>
-          <tr>
-            <td class="label">Sex</td>
-            <td class="data">Male</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="rehomeButtons">
-        <a href="#" class="enquireButton">Rehome Me</a>
-        <a href="#" class="donateButton">How to Help</a>
+    <form name="contactform" method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+      <div class="formfield">
+        <label for="fullname">Full name:</label>
+        <input id="fullname" name="fullname" type="text" />
       </div>
 
-      <div class="clear"></div>
-
-      <div id="description">
-        <p class="heading">About Me</p>
-        <p>
-          Sit dignissimos autem odio architecto excepturi quidem necessitatibus saepe alias repellendus possimus veniam, voluptatum! Dolores aperiam officia dicta consequuntur dolorem obcaecati quidem qui est. Omnis doloremque aliquid perspiciatis fugit temporibus.
-          Sit cum eum nobis nam obcaecati cupiditate. Corporis eveniet ex praesentium expedita porro aliquam laboriosam voluptate hic. Accusantium at quidem maxime magni laborum enim? Similique aspernatur quidem consequuntur sequi iusto!
-        </p>
+      <div class="formfield">
+        <label for="phonenumber">Phone number:</label>
+        <input id="phonenumber" name="phonenumber" type="text" />
+      </div>
+      
+      <div class="formfield">
+        <label for="emailaddress">Email address:</label>
+        <input id="emailaddress" name="emailaddress" type="text" />
       </div>
 
-      <iframe width="400" height="300" src="http://www.youtube.com/embed/0cMSQ6ANd50" frameborder="0" allowfullscreen></iframe>
+      <div class="formfield textarea">
+        <label for="message">Message:</label>
+        <select>
+          <option value=""> - Please choose a subject...</option>
+          <option value="General Enquiry">General Enquiry</option>
+        </select>
+        <textarea id="message" rows="20" columns="20" value="message"></textarea>
+      </div>
 
-      <div id="adoptinfo">
-        <p class="heading">All our animals are</p>
-        <ul>
-          <li>vaccinated, microchipped, wormed and neutered</li>
-          <li>examined by our local vet and treated as required</li>
-          <li>rehomed with 4 weeks free Petplan insurance</li>
-        </ul>
-      </div> <!-- adoptinfo -->
+      <div class="formfield button">
+        <input id="submit" type="submit" value="Go!" />
+      </div>
+    </form> 
 
-    </div> <!-- PETDATA -->
-
-    <div class="gallery">
-      <p>Gallery</p>
-      <img src="./img/dog.jpg" />
-      <img src="./img/dog.jpg" />
-      <img src="./img/dog.jpg" />
-      <img src="./img/dog.jpg" />
+    <div id="contactinfo">
+      <h3>Get in Touch</h3>
+      <p>
+        Please complete our webform and we will be in touch as soon as possible.
+        If you don't like forms use one of the options below.
+      </p>
+      <p class="contacttype">Telephone</p>
+      <p class="contactdetail">0161 123 1234</p>
+      <p class="contacttype">Email</p>
+      <p class="contactdetail">margaret@otterspool.co.uk</p>
     </div>
-  
+    
   </div> <!-- content -->
 
   <div id="sidebar">
+
     <div class="catButton">
       <a href="./cats.htm">Cat Rehoming</a>
     </div>
@@ -159,8 +139,12 @@
     Animal Haven
   </a></h1>
 
+  <a class="virginLink" href="http://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1008535" target="_blank" title="Link opens in a new window">
+    <img src="http://uk.virginmoneygiving.com/giving/Images/banners/106x139_donate.png" border="0" alt="Make a donation using Virgin Money Giving">
+  </a>
+  
   <ul id="nav">
-    <li class="topitem"><a href="index.htm"/>Home</a></li>
+    <li class="topitem"><a href="./index.htm"/>Home</a></li>
     <li class="topitem"><a href="#">Adopt</a>
       <ul>
         <li class="subitem"><a href="#">Cats</a></li>
@@ -177,11 +161,7 @@
     <li class="topitem"><a href="#">News</a></li>
     <li class="topitem"><a href="#">Contact</a></li>
   </ul>
-
-  <div class="clear"></div>
-  <a class="virginLink" href="http://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1008535" target="_blank" title="Link opens in a new window">
-    <img src="http://uk.virginmoneygiving.com/giving/Images/banners/106x139_donate.png" border="0" alt="Make a donation using Virgin Money Giving">
-  </a>
+  
 
   <p class="address">
     15 Padden Brook, <br />
