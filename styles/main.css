@@ -255,7 +255,7 @@ h3 {
 
 .thiscrumb {
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 
@@ -565,6 +565,7 @@ form {
 }
 
 .formfield textarea {
+  margin-top: 5px;
   width: 345px;
   height: 100px;
   resize: none;
@@ -713,6 +714,7 @@ form {
 }
 
 #footer .address {
+  margin-top: -85px;
   margin-left: 20px;
   float: left;
   width: 230px;
@@ -722,7 +724,7 @@ form {
 
 #footer .charitydetails {
   float: right;
-  margin-top: 56px;
+  margin-top: 74px;
   margin-right: 10px;
   color: #99c;
 }
