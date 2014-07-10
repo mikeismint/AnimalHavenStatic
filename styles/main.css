@@ -27,7 +27,6 @@ h3 {
 }
 
 .clear { clear: both; }
-//.clearfix:after { clear: both; }
 
 .lightback { 
   background-color: #dce9f4;
@@ -339,7 +338,6 @@ h3 {
   width: 90px;
   padding: 10px;
   color: #555;
-//  font-size: 1.2em;
 }
 
 #petinfo .label {
@@ -512,7 +510,6 @@ iframe {
   margin-left: -5px;
   padding: 5px 10px;
   color: white;
-  //line-height: 24px;
   font-size: 1.5em;
   letter-spacing: -1px;
   background-color: rgba( 0, 78, 148, 1.0);
@@ -563,7 +560,7 @@ form {
 .formfield input, .formfield textarea, .formfield select{
   float: left;
   margin: 0;
-  height: 18px
+  height: 18px;
   padding: 0 0 0 5px;
   width: 227px;
   font-family: inherit;
@@ -688,7 +685,6 @@ form {
   float: right;
   font-size: 1.2rem;
   margin-top: 10px;
-  //margin-right: 120px;
 }
 
 #footer #nav a {
