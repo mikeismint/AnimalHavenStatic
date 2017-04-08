@@ -1,4 +1,5 @@
-Otterspool
-==========
+# Animal rehoming centre website
 
-Public website for Otterspool Animal Haven
+A static website for a local (to me) animal rehoming centre.  
+This is not a complete site but instead was an exercise to explore XHTML and
+CSS.
